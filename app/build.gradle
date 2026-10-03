@@ -1,0 +1,21 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.fraidy.setlite'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.fraidy.setlite"   // מזהה שונה מהאפליקציה המלאה — לא ידרוס
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release { minifyEnabled false }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
